@@ -9,7 +9,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
 
-var adminID = [61]
+var adminID = [83]
 
 exports.adminID = adminID;
 
@@ -77,12 +77,12 @@ exports.create = function(req, res) {
 				blockchain.createUser('Customer',user['id'],values['email'],values['first_name'],values['last_name'],function(){
 
 
-					let rent = 'rent increase rate:0.1'
-					let desposit = 'deposit rate:0.2'
-					let notice = 'notice advance day:3'
-					let pest = 'pest control frequency:1'
-					let maintenance = 'maintenance coverage:1'
-					let termination = 'termination cost:0.3'
+					let rent = 'rent_increase_rate:0.1,'
+					let desposit = 'deposit_rate:0.2,'
+					let notice = 'notice_advance_day:3,'
+					let pest = 'pest_control_frequency:1,'
+					let maintenance = 'maintenance_coverage:1,'
+					let termination = 'termination_cost:0.3'
 					blockchain.CreateContract(user['id'],adminID[0],rent+desposit+notice+pest+maintenance+termination,function(){
 					})
 

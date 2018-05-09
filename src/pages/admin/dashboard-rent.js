@@ -62,8 +62,14 @@ class Dashboard extends React.Component {
                 <div className="form-group"><label for="text-input" >Current Amount Due: </label><font >$879.67</font></div>
                 <div className="form-group"><label for="text-input" >Due Date: </label><font>April 30, 2018</font></div>
                 <div className="form-group">
-                    <a href="/dashboard/rent/form" className="btn btn-default">Make a Payment</a></div>
+                    <a href="/dashboard/rent/form" className="btn btn-default">Make a Payment</a>
+                    </div>
+                    <div className="form-group">
+                    <a href="/dashboard/renew/form" className="btn btn-default">Renew Your Lease</a>
               </div>
+
+              </div>
+              
 
               <div>
                 <h6>Based on Lease Document:</h6>

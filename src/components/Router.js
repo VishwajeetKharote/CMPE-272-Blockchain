@@ -13,6 +13,7 @@ import DashboardMaintenance from '../pages/admin/dashboard-maintenance';
 import DashboardFormMaintenance from '../pages/admin/dashboard-form-maintenance';
 import DashboardRent from '../pages/admin/dashboard-rent';
 import DashboardRentForm from '../pages/admin/dashboard-rent-form';
+import DashboardRenewForm from '../pages/admin/dashboard-renew-form';
 import DashboardDocuments from '../pages/admin/dashboard-documents';
 import DashboardTermination from '../pages/admin/dashboard-termination';
 import DashboardDispute from '../pages/admin/dashboard-dispute';
@@ -53,6 +54,7 @@ const Router = () => (
             <Route exact path="/dashboard/maintenance/form" component={DashboardFormMaintenance} />
             <Route exact path="/dashboard/rent-information" component={DashboardRent} />
             <Route exact path="/dashboard/rent/form" component={DashboardRentForm} />
+            <Route exact path="/dashboard/renew/form" component={DashboardRenewForm} />
             <Route exact path="/dashboard/documents" component={DashboardDocuments} />
             <Route exact path="/dashboard/termination" component={DashboardTermination} />
             <Route exact path="/dashboard/dispute" component={DashboardDispute} />
